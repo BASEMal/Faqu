@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة Mercedes </title>
+    <style>
+        
+  
+         
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;  
+            text-align: center;
+
+        }
+        .header, .footer {
+        
+            background-color: #9c5b5b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            color:black;
+            
+        }
+  
+        .navigation {
+            background-color: #aa3a3a;
+            padding: 15px;
+            text-align: center;
+            
+        }
+        .navigation a {
+            color: white;
+            margin:15px;
+            text-decoration: none;
+            
+        }
+        .content {
+            display: none;        
+            padding: 20px;
+            text-align: right;
+             
+        }
+        .active {
+            display: block;
+           ::selection{
+            color: tomato;
+            background-color: black;
+           }
+        }
+        h2{
+            text-shadow: 1px 1px 20px blue;
+        }
+        h2{
+            
+            text-align: center;
+        }
+
+        #p4{
+            text-align:right;
+        }
+        
+           
+        
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+        img {
+            width: 400px;  
+            height: 100px;
+            border-radius: 30px;
+        }
+        .d11{
+            width: 400px;
+            height: 200px;
+            background-image: url(7.jpg);
+            animation: Cyber 60s 2s ;
+            text-align:center;
+            
+        }
+        @keyframes Cyber{
+           20%{background-image: url(imges/7.jpg);}
+           
+
+         
+           
+        }
+
+         
+           
+        
+    
+          
+
+        .login {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .c1{
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .c2 {
+            margin-bottom: 15px;
+        }
+        .c2 label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .c2 input {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        .c2 button {
+            width: 30%;
+            padding: 10px;
+            background-color: #b33d20;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .c2 button:hover {
+            background-color: #45a049; 
+            margin-bottom: 5px;
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        .c3{
+            font-size: 200%;
+                color: rgb(41, 124, 156);
+                text-shadow: -8px -8px 10px dimgray;
+        }
+        .c4{
+            
+            font-size: 200%;
+                color: rgb(41, 124, 156);
+                text-shadow: -8px -8px 10px dimgray;
+        
+             
+        }
+        .c5{
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+        .twitter {
+            background-color: #1da1f2;
+        }
+        .instagram {
+            background-color: #c32aa3;
+        }
+        
+             
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="c3">Mercedes</h1>
+        
+    </div>
+    
+    <div class="navigation">
+        <a href="#" onclick="showSection('log in')">تسجيل الدخول</a>
+        <a href="#" onclick="showSection('home')">الرئيسية</a>
+        <a href="#" onclick="showSection('about')">مواصفات</a>
+        <a href="#" onclick="showSection('services')">خدماتنا</a>
+        <a href="#" onclick="showSection('contact')">تواصل معنا</a>
+    </div>
+    <div id="log in" class=" content c1">
+        <h2>تسجيل الدخول</h2>
+        <form action="#" method="post">
+            <div id="log in" class="  c2">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div id="log in" class="c2">
+                <label for="password">كلمة السر:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="log in" class="c2">
+                <button type="submit">تسجيل الدخول</button>
+            </div>
+        
+    </div>
+   
+   
+
+
+    <div id="home" class="content active">
+        <h2 >  (Mercedes)نرحب بكم في شركة مرسديس  </h2>
+        
+        <h3> مرسيدس تتميز بالفخامة، الأداء العالي، والتكنولوجيا المتقدمة. </h3>
+        <h3>تشمل ميزات مثل أنظمة الأمان المتطورة، التصميم الأنيق، والمحركات القوية</h3>
+        <h3>مرسديس هي شركة مصنعة للسيارات الفرنسية التي تُعتبر من أبرز العلامات التجارية في مجال السيارات الفاخرة والرياضية. تأسست في عام 1919 وتقع مقرها الرئيسي في سوشو، فرنسا. تُعتبر مرسديس من الشركات الرائدة في تطوير تقنيات السيارات الهجينة والكهربائية، مما يجعلها ملتزمة بالاستدامة والابتكار.
+        </h3>
+        <div class="d11"></div>
+    </div>
+
+    <div id="about" class="content">
+        <h2>المواصفات</h2>
+       
+        <h4>مرسديس هي شركة مصنعة للسيارات الفرنسية التي تُعتبر من أبرز العلامات التجارية في مجال السيارات الفاخرة والرياضية. تُعد مرسديس معروفة بتصميمها الفريد وجودتها العالية، وتقدم مجموعة متنوعة من السيارات التي تجمع بين الأداء والأناقة. تُعتبر مرسديس أيضًا من الشركات الرائدة في تطوير تقنيات السيارات الكهربائية والهجينة.
+        </h4>
+    </div>
+
+    <div id="services" class="content">
+        <h2>خدماتنا</h2>
+       <h3>شركة مرسديس تُقدم مجموعة واسعة من الخدمات الفاخرة، تشمل</h3>
+       <h4>خدمة السيارات</h4>
+       <h4>من الصيانة الدورية إلى إصلاحات المركبات المتقدمة، تُقدم مرسديس خدمات عالية الجودة للحفاظ على أداء سياراتها</h4>
+       <h4>خدمة العملاء</h4>
+       <h4> دعم مميز على مدار الساعة لضمان رضا العملاء ومعالجة أي استفسارات أو مشكلات بسرعة.
+    </h4>
+    </div>
+
+    <div id="contact" class="content">
+        <h2>تواصل معنا</h2>
+        
+        
+       <h2> - **المقر الرئيسي في شتوتغارت، ألمانيا**: ☎️ +49 711 17 0
+        <hr>
+        - **مرسديس بالشرق الأوسط**: ☎️ +971 4 608 8888
+       <hr>
+        - **مرسديس في الولايات المتحدة**: ☎️ +1 800 367 6372
+        </p>
+        <a href="#"></a>
+    </div>
+
+    <div class="footer">
+        <marquee direction="right"> <h3 class="c4">&copy; حقوق الطبع محفوظة</h3></marquee> 
+        
+       
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
